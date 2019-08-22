@@ -171,15 +171,26 @@ class _MyHomePageState extends State<MyHomePage> {
                       return Padding(
                         padding: EdgeInsets.only(top: 20,right: 10),
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
                             Container(
                               width: 145,
                               height: 180,
-                              color: Colors.blue,
-                              child: Text(''),
+                              child: Image.asset(
+                                Hotels.destList[destIndex][0],
+                                fit: BoxFit.cover,
+                                height: 180,
+                                width: 145,
+                              ),
                             ),
-                            Text(Hotels.destList[destIndex][1]),
-                            Text(Hotels.destList[destIndex][2]),
+                            Text(Hotels.destList[destIndex][1],
+                              style: TextStyle(
+                                color: txt,
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                                ),),
+                            Text(Hotels.destList[destIndex][2],
+                              style: TextStyle(color: Colors.grey,),),
                           ],
                         ),
                       );
@@ -199,7 +210,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 Container(
                   height: 100,
                   width: 100,
-                  child: Text(''),
+                  child: Image.asset(
+                    Hotels.hotelList[index-1][0],
+                    fit: BoxFit.cover,
+                    height: 180,
+                    width: 145,
+                  ),
                   color: Colors.blue,
                 ),
                 SizedBox(width: 10,),

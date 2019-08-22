@@ -1,5 +1,5 @@
 class Hotels{
-  static List<String> dest1=['assets/images/pool.jpf','Tincidunt Pool','Madrid, Spain'];
+  static List<String> dest1=['assets/images/pool.jpg','Tincidunt Pool','Madrid, Spain'];
   static List<String> dest2=['assets/images/beach.jpg','Curabitur Beach','Rome, Italy'];
   static List<String> dest3=['assets/images/Budapest.jpg','Ipsun River','Paris, France'];
 
